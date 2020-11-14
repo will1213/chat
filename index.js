@@ -153,6 +153,7 @@ io.on('connection', (socket) => {
       //console.log("total users:",users);
     });
   });
-http.listen(3000, () => {
-  console.log('listening on *:3000');
+var port_number = (process.env.PORT || 3000);
+http.listen(port_number, () => {
+  console.log('listening on *:',port_number);
 });
